@@ -1,246 +1,399 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECommerce-Garden Surf</title>
-
-    <!-- box icons  -->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <!-- styles  -->
-    <link rel="stylesheet" href="./css/cart.css">
+    <title>GARDEN SURF</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-    <!-- HEADER  -->
-    <header>
-        <!-- NAV  -->
-        <div class="nav container">
-            <a href="#" class="logo"><span>GARDEN </span>SURF</a>
-            <a href="./main.html" class="back-button">Voltar para a Página Inicial</a>
-            <!-- CART ICON  -->
-            <i class='bx bx-shopping-bag' id="cart-icon"></i>
-          
-            <!-- CART  -->
-            <div class="cart">
-                <h2 class="cart-title">Your Cart</h2>
-
-                <!-- CONTENT  -->
-                <div class="cart-content">
-
-
-                </div>
-
-                <!-- TOTAL   -->
-                <div class="total">
-                    <div class="total-title">Total</div>
-                    <div class="total-price">$0</div>
-                </div>
-                <!-- BUY BUTTON  -->
-                <a href="./img/pix.jpg"><button type="button" class="btn-buy">Pagamento via Pix! </button></a><
-                
-                <!-- CART CLOSE  -->
-                <i class='bx bx-x' id="cart-close"></i>
+    <div class="navbar">
+        <div class="header-inner-content">
+            <h1 class="logo">GARDEN SURF</h1>
+            <nav>
+             <ul>
+                <li>Home</li>
+                <li>Produtos</li>
+                <li>Sobre</li>
+                <li>Contato</li>
+             </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <img src="./images/menu.png" class="menu-button" />
             </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-inner-content">
+            <div class="header-bottom-side">
+             <div class="header-bottom-side-left">
+                <h1>A MODA QUE TE ACOMPANHA EM CADA MOMENTO</h1>
+                      <br>
+                 <p>Loja Online com os Melhores Preços e Produtos da Região!</p>
+                 <p><strong>Entre em contato pelo link abaixo</strong></p>
+                <a href='https://www.instagram.com/garden.surf/profilecard/?igsh=ejU1bWxuODhmNHI4'><button>Ver Agora</button></a>
+             </div>
+              <div class="header-bottom-side-right">
+                <img src="./images/Design_sem_nome__2_-removebg-preview.png"/>
+              </div>
+          </div>    
         </div>
     </header>
 
+  
 
-    <!-- SHOP SECTION  -->
-    <section class="shop container">
-        <h2 class="section-title">Shop Products</h2>
 
-        <!-- CONTENT  -->
-        <div class="shop-content">
-            <!-- BOX 1 -->
-            <div class="product-box">
-                <img src="./img/camisa1.jpg" alt="" class="product-img">
-                <h2 class="product-title">BRANCO SUF 4</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
+</head>
+<body>
+    <div class="logo-container">
+        <div class="logo-item">
+            <div class="logo-circle">
+                <img src="./images/logohigh.jpg" alt="HIGH">
             </div>
-            <!-- BOX 2 -->
-            <div class="product-box">
-                <img src="./img/camisa2.jpg" alt="" class="product-img">
-                <h2 class="product-title">Nike Love the Pair</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-            <!-- BOX 3 -->
-            <div class="product-box">
-                <img src="./img/camisa3.jpg" alt="" class="product-img">
-                <h2 class="product-title">Preto NK 1</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-            <!-- BOX 4 -->
-            <div class="product-box">
-                <img src="./img/camisa4.jpg" alt="" class="product-img">
-                <h2 class="product-title">Preto off 4</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-            <!-- BOX 5 -->
-            <div class="product-box">
-                <img src="./img/camisa5.jpg" alt="" class="product-img">
-                <h2 class="product-title">Marrom NK</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-            <!-- BOX 6 -->
-            <div class="product-box">
-                <img src="./img/camisa6.jpg" alt="" class="product-img">
-                <h2 class="product-title">Branco NK 6</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-            <!-- BOX 7 -->
-            <div class="product-box">
-                <img src="./img/camisa7.jpg" alt="" class="product-img">
-                <h2 class="product-title">Roxo HH 1</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-            <!-- BOX 8 -->
-            <div class="product-box">
-                <img src="./img/product1.jpg" alt="" class="product-img">
-                <h2 class="product-title">Preto NK 5</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-              <!-- BOX 9 -->
-            <div class="product-box">
-                <img src="./img/product3.jpg" alt="" class="product-img">
-                <h2 class="product-title">Marrom tnf 2</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-            <!-- BOX 10 -->
-            <div class="product-box">
-                <img src="./img/product4.jpg" alt="" class="product-img">
-                <h2 class="product-title">Creme NK 1</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-             <!-- BOX 11 -->
-            <div class="product-box">
-                <img src="./img/product5.jpg" alt="" class="product-img">
-                <h2 class="product-title">Branco NK 7</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-              <!-- BOX 12 -->
-              <div class="product-box">
-                <img src="./img/product6.jpg" alt="" class="product-img">
-                <h2 class="product-title">Azul ad 1</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-             <!-- BOX 13 -->
-             <div class="product-box">
-                <img src="./img/product7.jpg" alt="" class="product-img">
-                <h2 class="product-title">Azul nk 2</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-              <!-- BOX 14 -->
-            <div class="product-box">
-                <img src="./img/product8.jpg" alt="" class="product-img">
-                <h2 class="product-title">Azul nk 5</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-            <!-- BOX 15 -->
-            <div class="product-box">
-                <img src="./img/product9.jpg" alt="" class="product-img">
-                <h2 class="product-title">Bege ad 1</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-            <!-- BOX 16 -->
-            <div class="product-box">
-                <img src="./img/product10.jpg" alt="" class="product-img">
-                <h2 class="product-title">Branco chr 5</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-            <!-- BOX 17 -->
-            <div class="product-box">
-                <img src="./img/product11.jpg" alt="" class="product-img">
-                <h2 class="product-title">Branco TN 6</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-            <!-- BOX 18 -->
-            <div class="product-box">
-                <img src="./img/product12.jpg" alt="" class="product-img">
-                <h2 class="product-title">Bege tnf 3</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-            <!-- BOX 19 -->
-            <div class="product-box">
-                <img src="./img/product13.jpg" alt="" class="product-img">
-                <h2 class="product-title">Marrom nk 1</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-            <!-- BOX 20 -->
-            <div class="product-box">
-                <img src="./img/product14.jpg" alt="" class="product-img">
-                <h2 class="product-title">Preto AD 7</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-            <!-- BOX 21 -->
-            <div class="product-box">
-                <img src="./img/product15.jpg" alt="" class="product-img">
-                <h2 class="product-title">Preto HH 3</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-              <!-- BOX 22 -->
-              <div class="product-box">
-                <img src="./img/product16.jpg" alt="" class="product-img">
-                <h2 class="product-title">Nike love the pair preto</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-              <!-- BOX 23 -->
-              <div class="product-box">
-                <img src="./img/product17.jpg" alt="" class="product-img">
-                <h2 class="product-title">Preto NK 11</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-              <!-- BOX 24 -->
-              <div class="product-box">
-                <img src="./img/product18.jpg" alt="" class="product-img">
-                <h2 class="product-title">Preto TN 10</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-              <!-- BOX 25 -->
-              <div class="product-box">
-                <img src="./img/product19.jpg" alt="" class="product-img">
-                <h2 class="product-title">Roxo LT 2</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-              <!-- BOX 26 -->
-              <div class="product-box">
-                <img src="./img/product20.jpg" alt="" class="product-img">
-                <h2 class="product-title">Vinho NK 1</h2>
-                <span class="product-price">R$65,00</span>
-                <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
+            <p>HIGH</p>
         </div>
-    </section>
+        <div class="logo-item">
+            <div class="logo-circle">
+                <img src="./images/logonike.jpg" alt="NIKE">
+            </div>
+            <p>NIKE</p>
+        </div>
+        <div class="logo-item">
+            <div class="logo-circle">
+                <img src="./images/logochronic.jpg" alt="CHRONIC">
+            </div>
+            <p>CHRONIC</p>
+        </div>
+        <div class="logo-item">
+            <div class="logo-circle">
+                <img src="./images/logosuf.jpg" alt="SUF">
+            </div>
+            <p>SUF</p>
+        </div>
 
-    <!-- link js  -->
-    <script src="/assets/js/cart.js"></script>
+        <div class="logo-item">
+            <div class="logo-circle">
+                <img src="./images/logothenorthface.jpg" alt="THE NORTH FACE">
+            </div>
+            <p>THE NORTH FACE</p>
+        </div>
+    </div>
 </body>
 
+
+    <!-- Main Content -->
+    
+    <main>
+       <div class="black-background">
+            <div class="page-inner-content">
+                <div class="cols cols-3">
+                    <img src="./images/camisa1.jpg"  alt="" width="90%" height="90%">
+                      
+                    <img src="./images/camisa2.jpg" alt="" width="90%" height="90%">
+                    
+                    <img src="./images/camisa3.jpg" alt="" width="90%" height="90%">
+                    
+                    <img src="./images/camisa4.jpg" alt="" width="90%" height="90%">
+                    
+                    <img src="./images/camisa5.jpg" alt="" width="90%" height="90%">
+                   
+                    <img src="./images/camisa6.jpg" alt="" width="90%" height="90%">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="page-inner-content">
+                <div id="products-list"></div>
+                <h3 class="section-title">Produtos Mais Vendidos</h3>
+                <div class="subtitle-underline"></div>
+                <div class="cols cols-4">
+                    <div class="product">
+                        <img src="./images/camisa7.jpg" alt="" />
+                        <p class="product-name">ROXO HH 1</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price"><span>R$</span>65,00</p>
+                        
+                    </div>
+                    <div class="product">
+                        <img src="./images/product1.jpg" alt="" />
+                        <p class="product-name">PRETO NK 5</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="product-price"><span>R$</span>65,00</p>
+                        
+                    </div>
+                    <div class="product">
+                        <img src="./images/product3.jpg" alt="" />
+                        <p class="product-name">MARROM TNF 2</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="product-price"><span>R$</span>65,00</p>
+                        
+                        
+                    </div>
+                    <div class="product">
+                        <img src="./images/product4.jpg" alt="" />
+                        <p class="product-name">CREME NK 1</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price"><span>R$</span>65,00</p>
+                        
+     
+                    </div>
+                    <div class="product">
+                        <img src="./images/product17.jpg" alt="" />
+                        <p class="product-name">Preto NK 11</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price"><span>R$</span>65,00</p>
+                        
+     
+                    </div>
+                    <div class="product">
+                        <img src="./images/BEGE NK 2.PNG" alt="" />
+                        <p class="product-name">BEGE NK 2</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price"><span>R$</span>65,00</p>
+                       
+     
+                    </div>
+                    <div class="product">
+                        <img src="./images/BRANCO NK 9.PNG" alt="" />
+                        <p class="product-name">BRANCO NK 7</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price"><span>R$</span>65,00</p>
+                        
+                    </div>
+                    <div class="product">
+                        <img src="./images/product6.jpg" alt="" />
+                        <p class="product-name">AZUL AD 1</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price"><span>R$</span>65,00</p>
+                        
+                    </div>
+                    
+                </div>
+                <div class="container">
+                    <a href="./cart.html" class="ver-mais-botao">Ver Mais Produtos</a>
+                </div>
+            </div>
+        </main>
+       
+
+            </div>
+        </div>
+
+        <div class="black-background">
+            <div class="header-inner-content">
+                <div class="header-bottom-side exclusive-container">
+                 <div class="header-bottom-side-left">
+                    <h1 class="logo">GARDEN SURF</h1>
+                    <p>
+                        Explore nossas coleções repletas de tendências e conforto, e descubra os produtos perfeitos que fará você se sentir confiante e incrível. Não perca a oportunidade de atualizar seu guarda-roupa com peças exclusivas no melhor preço do mercado!
+                    </p>
+                    <a href='https://www.instagram.com/garden.surf/?igsh=ejU1bWxuODhmNHI4"'><button>Ver Agora &#8594;</button></a>
+                 </div>
+                  <div class="header-bottom-side-right">
+                    <img src="./images/Gardensurf.jpg" />
+                  </div>
+              </div>    
+            </div>
+        </div>
+    
+        
+             <div class="testimonials-section">
+                <!-- Section Header Starts-->
+                 <section class="section-header">
+                    <h1>O Que os Clientes Dizem</h1>
+                 </section>
+                  <!-- Section Header Ends-->
+
+                 <!--Owl Carousel Slider Stats-->
+                 <div class="owl-carousel owl-theme testimonials-container">
+                    <!-- Item 1 Starts-->
+                    <div class="item testimonials-container-card">
+                        <main class="test-card-body">
+                            <div class="quote">
+                                <i class="fa fa-quote-left"></i>
+                                <h2>GARDEN SURF</h2>
+                            </div>
+                            <p>Produto de qualidade e entrega rápida</p>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </main>
+                     <div class="profile">
+                        <div class="profile-image">
+                            <img src="./images/felipe.png" alt="">
+                        </div>
+                        <div class="profile-desc">
+                            <span>Felipe</span>
+                            <span>Description</span>
+                        </div>
+                     </div>
+                    </div>
+                    <!--Item 1 Ends-->
+
+                    <div class="item testimonials-container-card">
+                        <main class="test-card-body">
+                            <div class="quote">
+                                <i class="fa fa-quote-left"></i>
+                                <h2>GARDEN SURF</h2>
+                            </div>
+                            <p>camisa boa e de qualidade só na garden 🔥👏</p>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </main>
+                     <div class="profile">
+                        <div class="profile-image">
+                            <img src="./images/Lisboa.jpg" alt="">
+                        </div>
+                        <div class="profile-desc">
+                            <span>Lisboa</span>
+                            <span>Description</span>
+                        </div>
+                     </div>
+                    </div>
+
+                    <div class="item testimonials-container-card">
+                        <main class="test-card-body">
+                            <div class="quote">
+                                <i class="fa fa-quote-left"></i>
+                                <h2>GARDEN SURF</h2>
+                            </div>
+                            <p>Camisa só da garden agora 🤯</p>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </main>
+                     <div class="profile">
+                        <div class="profile-image">
+                            <img src="./images/Brian.jpg" alt="">
+                        </div>
+                        <div class="profile-desc">
+                            <span>Brian</span>
+                            <span>Description</span>
+                        </div>
+                     </div>
+                    </div>
+
+            </section>
+
+                <!--Owl Carousel Slider Ends-->
+
+             </div>
+    
+    
+             <footer>
+                    <div id="footer_content">
+                        <div id="footer_contacts">
+                            <h1>GARDEN SURF</h1>
+                            <p>  Loja Online
+                                <br>
+                                 Em breve loja física 
+                                <br>
+                                 Melhor preço da Região
+                                <br>
+                                 Produtos importados com Garantia
+                                <br>
+                                 Entre em contato pelo link abaixo</p>
+
+            
+                            <div id="footer_social_media">
+                                <a href="https://www.instagram.com/garden.surf/?igsh=ejU1bWxuODhmNHI4" class="footer-link" id="instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+            
+                                <a href="https://linktr.ee/garden.surf" class="footer-link" id="linktree">
+                                    <img src="./images/icon.png" alt="" width="80%" height="80%">
+                                </a>
+            
+                                <a href="https://api.whatsapp.com/send/?phone=5519991350168&text&type=phone_number&app_absent=0" class="footer-link" id="whatsapp">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div id="footer_copyright">
+                            &#169
+                            2024 Luciano Gasques
+                              </div>
+        
+                        
+                        
+                        <ul class="footer-list">
+                            <li>
+                                <h3>Sobre Nós</h3>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">Pagamento Pix</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">Mercado Pago</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">Frete e Entrega</a>
+                            </li>
+                        </ul>
+            
+                        <ul class="footer-list">
+                            <li>
+                                <h3>Products</h3>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">App</a>
+                            </li>
+                            <li>
+                                <a href="https://drive.google.com/drive/folders/1-25vs0uGb7HpJf1IL8B4DjMYZ2KwVatR" class="footer-link">Catálogo</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">Camisas</a>
+                            </li>
+                        </ul>
+            
+    
+            
+    
+            </footer>
+        
+
+    <script>
+      const navbar = document.querySelector(".navbar");
+      const menuButton = document.querySelector(".menu-button");
+
+      menuButton.addEventListener('click', () => {
+        navbar.classList.toggle("show-menu");
+      });
+       </script>
+
+  
+    <!-- *** JQuery Link **** -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- *** Ownl Js link **** -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Link To Costum Script File-->
+     <script type="text/javascript" src="./js/script.js"></script>
+     <script src="./js/script.js"></script>
+   </body>
 </html>
